@@ -6,11 +6,14 @@
   <title>TinDog</title>
  <!-- BOOTSTRAP LINK -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
- <!-- Google fonts --> 
-  <link rel="stylesheet" href="htpps://fonts.googleaps.com/css?family=Monteserrat|ubuntu" rel="stylesheet">
   <!-- CSS stylesheets  -->
   <script src="2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik+Bubbles&display=swap" rel="stylesheet">
+  <!-- google fonts -->
+  <link href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;1,900&family=Ubuntu&display=swap" rel="stylesheet">
+ <link  href="https://fonts.googleapis.com">
+<link  href="https://fonts.gstatic.com" crossorigin>
   <!--Font awesome  -->
   <script src="https://kit.fontawesome.com/07aa7bb5c4.js" crossorigin="anonymous"></script>
 </head>
@@ -29,13 +32,13 @@
           <div class=top-right>
           <ul class="navbar-nav ms-auto mb-2 ">
           <li class="nav-item">
-              <a class="nav-link" href="">Contact</a>
+              <a class="nav-link" href="#footer">Contact</a>
           </li>
           <li class="nav-item">
-              <a class="nav-link" href="">Pricing</a>
+              <a class="nav-link" href="#pricing">Pricing</a>
           </li>
           <li class="nav-item">
-              <a class="nav-link" href="">Download</a>
+              <a class="nav-link" href="#cta">Download</a>
           </li>
       </ul>
     </div>
@@ -88,24 +91,47 @@
 
   <section id="testimonials">
 
-    <h2>I no longer have to sniff other dogs for love. I've found the hottest Corgi on TinDog. Woof.</h2>
-    <img src="images/dog-img.jpg" alt="dog-profile">
+    <div id="testimonial-carousel" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <h2>I no longer have to sniff other dogs for love. I've found the hottest Corgi on TinDog. Woof.</h2>
+          <img class="testimonial-image" src="images/dog-img.jpg" alt="dog-profile">
+          <em>Pebbles, New York</em>
+        </div>
+        <div class="carousel-item" >
+          <h2 class="testimonial-text">My dog used to be so lonely, but with TinDog's help, they've found the love of their life. I think.</h2>
+          <img class="testimonial-image" src="images/lady-img.jpg" alt="lady-profile">
+          <em>Beverly, Illinois</em>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#testimonial-carousel" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+      </a>
+      <a class="carousel-control-next" href="#testimonial-carousel" role="button" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+      </a>
+    </div>
+  </section>
+
+
+    <!-- <h2>I no longer have to sniff other dogs for love. I've found the hottest Corgi on TinDog. Woof.</h2>
+    <img class="testimonial-image" src="images/dog-img.jpg" alt="dog-profile">
     <em>Pebbles, New York</em>
 
-    <!-- <h2 class="testimonial-text">My dog used to be so lonely, but with TinDog's help, they've found the love of their life. I think.</h2>
+    <h2 class="testimonial-text">My dog used to be so lonely, but with TinDog's help, they've found the love of their life. I think.</h2>
     <img class="testimonial-image" src="images/lady-img.jpg" alt="lady-profile">
     <em>Beverly, Illinois</em> -->
 
-  </section>
+  
 
 
   <!-- Press -->
 
   <section id="press">
-    <img src="images/techcrunch.png" alt="tc-logo">
-    <img src="images/tnw.png" alt="tnw-logo">
-    <img src="images/bizinsider.png" alt="biz-insider-logo">
-    <img src="images/mashable.png" alt="mashable-logo">
+    <img class="press-img" src="images/techcrunch.png" alt="tc-logo">
+    <img class="press-img" src="images/tnw.png" alt="tnw-logo">
+    <img class="press-img" src="images/bizinsider.png" alt="biz-insider-logo">
+    <img class="press-img" src="images/mashable.png" alt="mashable-logo">
 
   </section>
 
@@ -117,30 +143,107 @@
     <h2>A Plan for Every Dog's Needs</h2>
     <p>Simple and affordable price plans for your and your dog.</p>
 
+    <div class="row">
 
-    <h3>Chihuahua</h3>
-    <h2>Free</h2>
-    <p>5 Matches Per Day</p>
-    <p>10 Messages Per Day</p>
-    <p>Unlimited App Usage</p>
-    <button type="button">Sign Up</button>
+      <div class="pricing-col col-lg-4 col-md-6">
+        <div class="card-deck">
+          <div class="card-header">
+              <h3>Chihuahua</h3>
+          </div>
+          <div class="card-Body">
+            <h2>Free</h2>
+            <p>5 Matches Per Day</p>
+            <p>10 Messages Per Day</p>
+            <p>Unlimited App Usage</p>
+            <button class="btn btn-lg btn-block btn-outline-dark" type="button">Sign Up</button>
+          </div>
+      </div>
 
+      </div>
 
-    <h3>Labrador</h3>
-    <h2>$49 / mo</h2>
+      <div class="pricing-col col-lg-4 col-md-6">
+        <div class="card-deck">
+          <div class="card-header">
+              <h3>Labrador</h3>
+          </div>
+          <div class="card-Body">
+            <h2>$49 / mo</h2>
+        <p>Unlimited Matches</p>
+        <p>Unlimited Messages</p>
+        <p>Unlimited App Usage</p>
+        <button class= "btn btn-lg btn-block btn-outline-dark" type="button">Sign Up</button>
+          </div>
+      </div>
+      </div>
+  <!-- <div class="card-deck">
+      <div class="card-header">
+          <h3>Labrador</h3>
+      </div>
+      <div class="card-Body">
+        <h2>$49 / mo</h2>
     <p>Unlimited Matches</p>
     <p>Unlimited Messages</p>
     <p>Unlimited App Usage</p>
     <button type="button">Sign Up</button>
+      </div>
+  </div> -->
+  <div class="pricing-col col-lg-4">
+    <div class="card-deck">
+      <div class="card-header">
+          <h3>Mastiff</h3>
+      </div>
+      <div class="card-Body">
+        <h2>$99 / mo</h2>
+        <p>Pirority Listing</p>
+        <p>Unlimited Matches</p>
+        <p>Unlimited Messages</p>
+        <p>Unlimited App Usage</p>
+        <button class="btn btn-lg btn-block btn-outline-dark" type="button">Sign Up</button>
+          
+      </div>
+  </div>
+
+  </div>
+  
+  <!-- <div class="card-deck">
+      <div class="card-header">
+          <h3>Mastiff</h3>
+      </div>
+      <div class="card-Body">
+        <h2>$99 / mo</h2>
+        <p>Pirority Listing</p>
+        <p>Unlimited Matches</p>
+        <p>Unlimited Messages</p>
+        <p>Unlimited App Usage</p>
+        <button type="button">Sign Up</button>
+          
+      </div>
+  </div> -->
 
 
-    <h3>Mastiff</h3>
+    <!-- <h3>Chihuahua</h3>
+    <h2>Free</h2>
+    <p>5 Matches Per Day</p>
+    <p>10 Messages Per Day</p>
+    <p>Unlimited App Usage</p>
+    <button type="button">Sign Up</button> -->
+
+
+    <!-- <h3>Labrador</h3>
+    <h2>$49 / mo</h2>
+    <p>Unlimited Matches</p>
+    <p>Unlimited Messages</p>
+    <p>Unlimited App Usage</p>
+    <button type="button">Sign Up</button> -->
+
+
+    <!-- <h3>Mastiff</h3>
     <h2>$99 / mo</h2>
     <p>Pirority Listing</p>
     <p>Unlimited Matches</p>
     <p>Unlimited Messages</p>
     <p>Unlimited App Usage</p>
-    <button type="button">Sign Up</button>
+    <button type="button">Sign Up</button> -->
 
   </section>
 
@@ -149,9 +252,9 @@
 
   <section id="cta">
 
-    <h3>Find the True Love of Your Dog's Life Today.</h3>
-    <button type="button">Download</button>
-    <button type="button">Download</button>
+    <h3 class="cta-heading">Find the True Love of Your Dog's Life Today.</h3>
+    <button type="button" class="btn btn-dark btn-lg download-button"><i class="fa-brands fa-apple"></i> Download</button>
+    <button type="button" class="btn btn-outline-light btn-lg download-button"><i class="fa-brands fa-google-play"></i>Download</button>
 
   </section>
 
@@ -159,45 +262,57 @@
   <!-- Footer -->
 
   <footer id="footer">
+    <i class="social-icon fa-brands fa-facebook"></i>
+    <i class="social-icon fa-brands fa-twitter"></i>
+    <i class="social-icon fa-brands fa-instagram"></i>
+    <i class="social-icon fa-regular fa-envelope"></i>
 
     <p>© Copyright TinDog</p>
 
   </footer>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
 
 </body>
 
 </html>
 
-/////////////////////////////////////////////////////////////////
 
 
-CSS-
+//CSS\\
 #title{
     background-color: #ff4c68;
     color: #fff;
 }
 .h1{
-    font-family: "Montserrat-Black";
+    font-family: "Montserrat-Black", sans-serif;
     font-size: 3.5rem;
     line-height: 1.5;
 }
-.h3{
-    font-family:"Montserrat-Bold";
+h3{
+    font-family: 'Montserrat', sans-serif;
     font-size: 1.5rem;
+}
+
+h2{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    line-height: 1.5;
 }
 .p{
     color: #8f8f8f;
 }
 .container-fluid{
-    padding: 3% 15%;
+    padding: 3% 15% 7%;
 }
 /* navbar brand */
 .navbar{
     padding-bottom: 4.5rem;
 }
 .navbar-brand{
-    font-family:"ubuntu";
+    font-family: "'Ubuntu', sans-serif";
     font-size: 2.5rem;
     font-weight: bold;
 }
@@ -207,14 +322,20 @@ CSS-
 
 .title-image{
     transform: rotate(25deg);
-    width:60%
+    width:20%;
+    position: absolute;
+    top: 20px;
+    right: 20%;
 }
 #features{
     padding: 7% 15%;
+    background-color: #fff;
+    position: relative;
+
 }
 .feature-box{
     text-align: center;
-    padding: 5%;
+    padding: 4.5%;
 }
 .icon{
     color: #ef8172;
@@ -222,4 +343,63 @@ CSS-
 }
 .icon:hover{
     color: #ff4c68;
+}
+/* testimonials */
+#testimonials{
+    text-align: center;
+    background-color: #ef8172;
+    color: #fff ;
+}
+.testimonial-image{
+    width: 10%;
+    border-radius: 100%;
+}
+#press{
+    background-color: #ef8172;
+    text-align: center;
+    padding-bottom: 3%;
+}
+.press-img{
+    width: 15%;
+    margin: 20px 20px 50px;
+}
+.carousel-item{
+    padding: 7% 15%;
+
+}
+#pricing{
+   padding: 100px;
+   text-align: center;
+}
+.pricing-col{
+    padding: 3% 2%;
+}
+@media (max-width: 1028px){
+    #title{
+        text-align: center;
+    }
+    .title-image{
+        position:static;
+        transform:rotate(0);
+    }
+}
+#cta{
+    text-align: center;
+    padding: 7% 15%;
+    background-color: #ff4c68;
+    color: #fff;
+}
+.cta-heading{
+    font-family: "Montserrat-Black";
+    
+    font-size: 3.5rem;
+    line-height: 1.5;
+}
+#footer{
+    text-align: center;
+    padding:2% 5% ;
+    background-color: #fff;
+}
+.social-icon{
+    margin: 20px 10px;
 }
